@@ -10909,3 +10909,21 @@ footer a { color: #fff; text-decoration: none; }
 @media (max-width: 767.98px) { .hero { padding: 9rem 0 5rem; } .section { padding: 5rem 0; } .organiser-grid { grid-template-columns: 1fr; } .registration-panel { align-items: flex-start; flex-direction: column; } .registration-action { text-align: left; } }
 @media (max-width: 575.98px) { .speaker-grid { grid-template-columns: 1fr; } .footer-inner { flex-direction: column; } }
 @media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } *, *::before, *::after { transition: none !important; } }
+
+/* Strong visual treatment inspired by the previous BrainModes site. */
+#mainNav { background: rgba(16,47,69,.96); border-bottom-color: rgba(255,255,255,.12); }
+.navbar-brand { color: #fff; }
+.navbar-brand span { color: #69d7df; }
+.navbar-toggler .navbar-toggler-icon { filter: invert(1); }
+.nav-link { color: rgba(255,255,255,.78); }
+.nav-link:hover, .nav-link:focus { color: #fff; }
+.registration-link { background: #10afbd; }
+.hero { min-height: 46rem; padding: 12rem 0 8rem; background: linear-gradient(105deg,rgba(6,29,48,.92) 0%,rgba(8,43,67,.8) 50%,rgba(6,29,48,.58) 100%),url('../assets/bilbao-bg.jpg') center 42%/cover no-repeat; }
+.hero::after { border-color: rgba(255,255,255,.12); box-shadow: 0 0 0 5rem rgba(255,255,255,.025),0 0 0 10rem rgba(255,255,255,.018); }
+.hero h1 { color: #fff; }
+.hero h1 span { color: #69d7df; }
+.hero h2 { color: #bceff2; }
+.hero-copy { color: rgba(255,255,255,.82); }
+.text-link { color: #fff; }
+.text-link:hover { color: #69d7df; }
+.event-card { background: rgba(255,255,255,.94); border-color: rgba(255,255,255,.45); }

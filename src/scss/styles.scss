@@ -37,38 +37,40 @@ body {
 #mainNav {
     top: .4rem;
     min-height: 4.6rem;
-    background: rgba(255, 255, 255, .94);
-    border-bottom: 1px solid rgba($ink, .1);
+    background: rgba($ink, .96);
+    border-bottom: 1px solid rgba(255, 255, 255, .12);
     backdrop-filter: blur(14px);
 }
 
 .navbar-brand {
-    color: $ink;
+    color: #fff;
     font-family: "Manrope", sans-serif;
     font-size: 1.25rem;
     font-weight: 800;
     letter-spacing: -.04em;
 
-    span { color: $blue; }
+    span { color: #69d7df; }
 }
 
 .navbar-toggler {
     border: 0;
     box-shadow: none !important;
+
+    .navbar-toggler-icon { filter: invert(1); }
 }
 
 .nav-link {
-    color: rgba($ink, .72);
+    color: rgba(255, 255, 255, .78);
     font-weight: 600;
     margin-left: 1.3rem;
 
     &:hover,
-    &:focus { color: $blue; }
+    &:focus { color: #fff; }
 }
 
 .registration-link {
     color: #fff;
-    background: $blue;
+    background: $cyan;
     border-radius: 999px;
     padding: .55rem 1rem !important;
 }
@@ -76,10 +78,11 @@ body {
 .hero {
     position: relative;
     overflow: hidden;
-    padding: 11rem 0 7rem;
+    min-height: 46rem;
+    padding: 12rem 0 8rem;
     background:
-        radial-gradient(circle at 88% 18%, rgba($cyan, .16), transparent 28rem),
-        linear-gradient(145deg, #eef6ff 0%, #fff 58%, #fff8e8 100%);
+        linear-gradient(105deg, rgba(6, 29, 48, .92) 0%, rgba(8, 43, 67, .8) 50%, rgba(6, 29, 48, .58) 100%),
+        url('../assets/bilbao-bg.jpg') center 42% / cover no-repeat;
 
     &::after {
         content: "";
@@ -88,9 +91,9 @@ body {
         bottom: -12rem;
         width: 32rem;
         height: 32rem;
-        border: 1px solid rgba($blue, .12);
+        border: 1px solid rgba(255, 255, 255, .12);
         border-radius: 50%;
-        box-shadow: 0 0 0 5rem rgba($blue, .025), 0 0 0 10rem rgba($blue, .018);
+        box-shadow: 0 0 0 5rem rgba(255, 255, 255, .025), 0 0 0 10rem rgba(255, 255, 255, .018);
     }
 }
 
@@ -112,16 +115,17 @@ body {
 }
 
 .hero h1 {
+    color: #fff;
     margin: 0;
     font-size: clamp(4.7rem, 12vw, 8.7rem);
     line-height: .86;
 
-    span { color: $blue; }
+    span { color: #69d7df; }
 }
 
 .hero h2 {
     margin: 2rem 0 1.25rem;
-    color: $blue;
+    color: #bceff2;
     font-family: "Manrope", sans-serif;
     font-size: clamp(1.45rem, 3vw, 2.2rem);
     font-weight: 700;
@@ -130,7 +134,7 @@ body {
 
 .hero-copy {
     max-width: 38rem;
-    color: rgba($ink, .72);
+    color: rgba(255, 255, 255, .82);
     font-size: 1.1rem;
     line-height: 1.75;
 }
@@ -156,19 +160,19 @@ body {
 }
 
 .text-link {
-    color: $ink;
+    color: #fff;
     font-weight: 700;
     text-decoration: none;
 
-    &:hover { color: $blue; }
+    &:hover { color: #69d7df; }
 }
 
 .event-card {
     position: relative;
     z-index: 1;
     padding: 2rem;
-    background: rgba(255, 255, 255, .88);
-    border: 1px solid rgba($ink, .1);
+    background: rgba(255, 255, 255, .94);
+    border: 1px solid rgba(255, 255, 255, .45);
     border-radius: 1.5rem;
     box-shadow: 0 1.7rem 4rem rgba($ink, .12);
 }
