@@ -12,4 +12,4 @@ The editable source files are in `src/`:
 
 Run `npm install` once and `npm run build` to generate the public `index.html`, `css/`, `js/`, and `assets/` files. Use `npm start` for a local live preview.
 
-The Ticket Tailor registration link is intentionally left pending in the first draft.
+Ticket registration is linked from the homepage through Ticket Tailor.
