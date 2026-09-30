@@ -1,84 +1,162 @@
 doctype html
 html(lang='en')
-
     head
-
         meta(charset='utf-8')
-        meta(name='viewport', content='width=device-width, initial-scale=1, shrink-to-fit=no')
-        meta(name='description', content='')
-        meta(name='author', content='')
-
-        title Scrolling Nav - Start Bootstrap Template
-
+        meta(name='viewport', content='width=device-width, initial-scale=1')
+        meta(name='description', content='MIND 2026 — International Meeting on Multiscale & Integrative Neuro-physiological Data, 14–15 December 2026 in Bilbao.')
+        meta(name='author', content='MIND 2026')
+        title MIND 2026 | Bilbao
         link(rel='icon', type='image/x-icon', href='assets/favicon.ico')
-
-        // Core theme CSS (includes Bootstrap)
+        link(rel='preconnect', href='https://fonts.googleapis.com')
+        link(rel='preconnect', href='https://fonts.gstatic.com', crossorigin='')
+        link(href='https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@600;700;800&display=swap', rel='stylesheet')
         link(href='css/styles.css', rel='stylesheet')
 
     body#page-top
+        .spectrum-strip(aria-hidden='true')
 
-        // Navigation
-        nav#mainNav.navbar.navbar-expand-lg.navbar-dark.bg-dark.fixed-top
-            .container.px-4
-                a.navbar-brand(href='#page-top') Start Bootstrap
-                button.navbar-toggler(type='button' data-bs-toggle='collapse', data-bs-target='#navbarResponsive', aria-controls='navbarResponsive', aria-expanded='false', aria-label='Toggle navigation')
+        nav#mainNav.navbar.navbar-expand-lg.fixed-top(aria-label='Main navigation')
+            .container
+                a.navbar-brand(href='#page-top', aria-label='MIND 2026 home') MIND #[span 2026]
+                button.navbar-toggler(type='button', data-bs-toggle='collapse', data-bs-target='#navbarMenu', aria-controls='navbarMenu', aria-expanded='false', aria-label='Toggle navigation')
                     span.navbar-toggler-icon
-                #navbarResponsive.collapse.navbar-collapse
-                    ul.navbar-nav.ms-auto
+                #navbarMenu.collapse.navbar-collapse
+                    ul.navbar-nav.ms-auto.align-items-lg-center
                         li.nav-item
-                            a.nav-link(href='#about') About
+                            a.nav-link(href='#meeting') Meeting
                         li.nav-item
-                            a.nav-link(href='#services') Services
+                            a.nav-link(href='#speakers') Speakers
                         li.nav-item
-                            a.nav-link(href='#contact') Contact
+                            a.nav-link(href='#organisers') Organisers
+                        li.nav-item
+                            a.nav-link.registration-link(href='#registration') Free registration
 
-        // Header
-        header.bg-primary.bg-gradient.text-white
-            .container.px-4.text-center
-                h1.fw-bolder Welcome to Scrolling Nav
-                p.lead A functional Bootstrap 5 boilerplate for one page scrolling websites
-                a.btn.btn-lg.btn-light(href='#about') Start scrolling!
+        main
+            header.hero
+                .container
+                    .row.align-items-center.g-5
+                        .col-lg-7
+                            p.eyebrow International meeting
+                            h1 MIND #[span 2026]
+                            h2 Multiscale & Integrative #[br] Neuro-physiological Data
+                            p.hero-copy Two focused days connecting neurophysiological data, brain–body interactions and biomedical applications.
+                            .hero-actions
+                                a.btn.btn-primary.btn-lg(href='#registration') Register for free
+                                a.text-link(href='#meeting') Discover the meeting #[span(aria-hidden='true') ↓]
+                        .col-lg-5
+                            .event-card
+                                .event-detail
+                                    span.detail-label Dates
+                                    strong 14–15 December 2026
+                                .event-detail
+                                    span.detail-label Venue
+                                    strong Bizkaia Aretoa
+                                    span Bilbao · University of the Basque Country
+                                .event-note
+                                    span.dot
+                                    | In person · Free for students
 
-        // About section
-        section#about
-            .container.px-4
-                .row.gx-4.justify-content-center
-                    .col-lg-8
-                        h2 About this page
-                        p.lead
-                            | This is a great place to talk about your webpage. This template is purposefully unstyled so you can use it as a boilerplate or starting point for you own landing page designs! This template features:
-                        ul
-                            li Clickable nav links that smooth scroll to page sections
-                            li Responsive behavior when clicking nav links perfect for a one page website
-                            li
-                                | Bootstrap's scrollspy feature which highlights which section of the page you're on in the navbar
-                            li Minimal custom CSS so you are free to explore your own unique design options
+            section#meeting.section
+                .container
+                    .section-heading
+                        p.eyebrow The meeting
+                        h2 Built for exchange, kept simple.
+                    .row.g-4
+                        .col-lg-7
+                            .content-card.audience-card
+                                span.card-number 01
+                                h3 Who it is for
+                                p Biomedical engineering students from the Basque Country and nearby regions, alongside researchers, clinical professionals, engineers, technology centres and companies in the biomedical ecosystem.
+                        .col-lg-5
+                            .content-card.topics-card
+                                span.card-number 02
+                                h3 Topics
+                                p Neurophysiological data, brain–body interactions and translation into clinical applications and medical devices.
+                                ul.topic-list
+                                    li Neurotechnology
+                                    li Electromedicine
+                                    li Multimodal neuroimaging
+                                    li Physiological analysis
 
-        // Services section
-        section#services.bg-light
-            .container.px-4
-                .row.gx-4.justify-content-center
-                    .col-lg-8
-                        h2 Services we offer
-                        p.lead
-                            | Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut optio velit inventore, expedita quo laboriosam possimus ea consequatur vitae, doloribus consequuntur ex. Nemo assumenda laborum vel, labore ut velit dignissimos.
+            section#speakers.section.section-tint
+                .container
+                    .section-heading
+                        p.eyebrow Programme
+                        h2 Invited & local speakers
+                        p A growing group of researchers working across computational neuroscience, physiology and biomedical engineering.
+                    .speaker-grid
+                        article.person-card
+                            p.person-type Invited speaker
+                            h3
+                                a(href='https://scholar.google.com/citations?user=54KX1rIAAAAJ&hl=it', target='_blank', rel='noopener noreferrer') Sebastiano Stramaglia
+                            p Full Professor in Applied Physics · University of Bari, Italy
+                        article.person-card
+                            p.person-type Invited speaker
+                            h3
+                                a(href='https://scholar.google.com/citations?user=7L_KMhoAAAAJ&hl=it', target='_blank', rel='noopener noreferrer') Luca Faes
+                            p Professor of Biomedical Engineering · University of Palermo · University of Novi Sad
+                        article.person-card
+                            p.person-type Local speaker
+                            h3
+                                a(href='https://scholar.google.com/citations?user=GHwmagQAAAAJ&hl=es', target='_blank', rel='noopener noreferrer') Unai Ayala Fernandez
+                            p Associate Professor · Mondragon Unibertsitatea
+                        article.person-card
+                            p.person-type Local speaker
+                            h3
+                                a(href='https://scholar.google.com/citations?user=4WgXIToAAAAJ&hl=es', target='_blank', rel='noopener noreferrer') Begoña García-Zapirain Soto
+                            p University of Deusto
+                        article.person-card
+                            p.person-type Local speaker
+                            h3
+                                a(href='https://www.ehu.eus/en/web/biores/elisabete-aramendi', target='_blank', rel='noopener noreferrer') Elisabete Aramendi
+                            p University of the Basque Country (EHU)
+                        article.person-card
+                            p.person-type Local speaker
+                            h3 Asier Erramuzpe
+                            p Computational Neuroimaging Lab at Biobizkaia · Ikerbasque
+                        article.person-card
+                            p.person-type Local speaker
+                            h3 Paolo Bonifazi
+                            p Computational Neuroimaging Lab at Biobizkaia · Ikerbasque
+                        article.person-card
+                            p.person-type Local speaker
+                            h3 Ibai Diez
+                            p CompNeuro Bilbao · Ikerbasque
 
-        // Contact section
-        section#contact
-            .container.px-4
-                .row.gx-4.justify-content-center
-                    .col-lg-8
-                        h2 Contact us
-                        p.lead
-                            | Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero odio fugiat voluptatem dolor, provident officiis, id iusto! Obcaecati incidunt, qui nihil beatae magnam et repudiandae ipsa exercitationem, in, quo totam.
+            section#organisers.section
+                .container
+                    .section-heading
+                        p.eyebrow Organised by
+                        h2 Three universities, one shared meeting.
+                    .organiser-grid
+                        article.organiser-card
+                            .initials EHU
+                            h3 University of the Basque Country
+                            p Jesús M. Cortes
+                        article.organiser-card
+                            .initials UG
+                            h3 Ghent University
+                            p Daniele Marinazzo
+                        article.organiser-card
+                            .initials CU
+                            h3 Comenius University Bratislava
+                            p Michal Javorka
 
-        // Footer
-        footer.py-5.bg-dark
-            .container.px-4
-                p.m-0.text-center.text-white Copyright &copy; Your Website 2023
+            section#registration.section
+                .container
+                    .registration-panel
+                        .registration-copy
+                            p.eyebrow Registration
+                            h2 Free for students.
+                            p Attendance costs €0. Registration is required because places are limited.
+                        .registration-action
+                            span.status-label Ticket Tailor link coming soon
+                            a.btn.btn-light.btn-lg.disabled(href='#', aria-disabled='true', tabindex='-1') Registration opens soon
 
-        // Bootstrap core JS
+        footer
+            .container.footer-inner
+                p MIND 2026 · Bilbao · 14–15 December 2026
+                a(href='#page-top') Back to top ↑
+
         script(src='https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js')
-
-        // Core theme JS
         script(src='js/scripts.js')

@@ -1,7 +1,7 @@
 {
-    "title": "Scrolling Nav",
-    "name": "startbootstrap-scrolling-nav",
-    "version": "5.0.6",
+    "title": "MIND 2026",
+    "name": "mind-2026-bilbao",
+    "version": "1.0.0",
     "scripts": {
         "build": "npm run clean && npm run build:pug && npm run build:scss && npm run build:scripts && npm run build:assets",
         "build:assets": "node scripts/build-assets.js",
@@ -12,7 +12,7 @@
         "start": "npm run build && node scripts/start.js",
         "start:debug": "npm run build && node scripts/start-debug.js"
     },
-    "description": "A smooth scrolling navigation HTML template built with Bootstrap",
+    "description": "Website for the MIND 2026 international meeting in Bilbao",
     "keywords": [
         "css",
         "sass",
@@ -21,19 +21,12 @@
         "theme",
         "template"
     ],
-    "homepage": "https://startbootstrap.com/template/scrolling-nav",
-    "bugs": {
-        "url": "https://github.com/StartBootstrap/startbootstrap-scrolling-nav/issues",
-        "email": "feedback@startbootstrap.com"
-    },
+    "homepage": "https://compneurobilbao.github.io/",
     "license": "MIT",
-    "author": "Start Bootstrap",
-    "contributors": [
-        "David Miller (https://davidmiller.io/)"
-    ],
+    "author": "CompNeuro Bilbao",
     "repository": {
         "type": "git",
-        "url": "https://github.com/StartBootstrap/startbootstrap-scrolling-nav.git"
+        "url": "https://github.com/compneurobilbao/compneurobilbao.github.io.git"
     },
     "dependencies": {
         "bootstrap": "5.2.3"
