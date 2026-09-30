@@ -309,6 +309,15 @@ body {
 
 .organiser-card { padding: 2rem; }
 
+.organiser-card > p a {
+    color: $blue;
+    font-weight: 700;
+    text-decoration-color: rgba($blue, .35);
+    text-underline-offset: .2em;
+
+    &:hover { text-decoration-color: $blue; }
+}
+
 .initials {
     display: grid;
     width: 3.2rem;

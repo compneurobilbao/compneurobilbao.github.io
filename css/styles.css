@@ -10894,6 +10894,8 @@ body { color: #102f45; background: #fff; font-family: "DM Sans", sans-serif; -we
 .person-type { margin-bottom: 1.2rem; color: #1266d4; font-size: .68rem; font-weight: 700; letter-spacing: .1em; text-transform: uppercase; }
 .organiser-grid { display: grid; grid-template-columns: repeat(3,1fr); gap: 1rem; }
 .organiser-card { padding: 2rem; }
+.organiser-card > p a { color: #1266d4; font-weight: 700; text-decoration-color: rgba(18,102,212,.35); text-underline-offset: .2em; }
+.organiser-card > p a:hover { text-decoration-color: #1266d4; }
 .initials { display: grid; width: 3.2rem; height: 3.2rem; margin-bottom: 2rem; place-items: center; color: #fff; background: #102f45; border-radius: .75rem; font-family: "Manrope", sans-serif; font-weight: 800; }
 .registration-panel { display: flex; align-items: center; justify-content: space-between; gap: 3rem; padding: clamp(2.2rem,6vw,4.5rem); color: #fff; background: #1266d4; border-radius: 1.7rem; box-shadow: 0 1.8rem 4rem rgba(18,102,212,.22); }
 .registration-panel .eyebrow { color: #aeeff3; }
