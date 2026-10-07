@@ -29,7 +29,7 @@ html(lang='en')
                         li.nav-item
                             a.nav-link(href='#organisers') Organisers
                         li.nav-item
-                            a.nav-link.registration-link(href='#registration') Free registration
+                            a.nav-link.registration-link(href='#registration') Apply
 
         main
             header.hero
@@ -41,7 +41,7 @@ html(lang='en')
                             h2 Multiscale & Integrative #[br] Neuro-physiological Data
                             p.hero-copy Two focused days connecting neurophysiological data, brain–body interactions and biomedical applications.
                             .hero-actions
-                                a.btn.btn-primary.btn-lg(href='#registration') Ticket information
+                                a.btn.btn-primary.btn-lg(href='#registration') Apply for a place
                                 a.text-link(href='#meeting') Discover the meeting #[span(aria-hidden='true') ↓]
                         .col-lg-5
                             .event-card
@@ -82,14 +82,23 @@ html(lang='en')
                 .container
                     .section-heading
                         p.eyebrow Programme
-                        h2 Invited & local speakers
-                        p A growing group of researchers working across computational neuroscience, physiology and biomedical engineering.
+                        h2 Speakers across career stages
+                        p Researchers working across computational neuroscience, physiology and biomedical engineering.
+                    .speaker-level
+                        .level-heading
+                            p.eyebrow Senior researchers
+                            h3 Invited &amp; local speakers
                     .speaker-grid
                         article.person-card
                             p.person-type Invited speaker
                             h3
                                 a(href='https://scholar.google.com/citations?user=54KX1rIAAAAJ&hl=it', target='_blank', rel='noopener noreferrer') Sebastiano Stramaglia
                             p Full Professor in Applied Physics · University of Bari, Italy
+                        article.person-card
+                            p.person-type Local speaker
+                            h3
+                                a(href='https://scholar.google.com/citations?user=4WgXIToAAAAJ&hl=es', target='_blank', rel='noopener noreferrer') Begoña García-Zapirain Soto
+                            p Full Professor · University of Deusto
                         article.person-card
                             p.person-type Invited speaker
                             h3
@@ -98,18 +107,18 @@ html(lang='en')
                         article.person-card
                             p.person-type Local speaker
                             h3
-                                a(href='https://scholar.google.com/citations?user=4WgXIToAAAAJ&hl=es', target='_blank', rel='noopener noreferrer') Begoña García-Zapirain Soto
-                            p Full Professor · University of Deusto
-                        article.person-card
-                            p.person-type Local speaker
-                            h3
                                 a(href='https://www.ehu.eus/en/web/biores/elisabete-aramendi', target='_blank', rel='noopener noreferrer') Elisabete Aramendi
                             p Full Professor · University of the Basque Country (EHU)
                         article.person-card
                             p.person-type Local speaker
                             h3
-                                a(href='https://scholar.google.com/citations?user=GHwmagQAAAAJ&hl=es', target='_blank', rel='noopener noreferrer') Unai Ayala Fernandez
-                            p Associate Professor · Mondragon Unibertsitatea
+                                a(href='https://scholar.google.com/citations?hl=it&user=pjHOWygAAAAJ', target='_blank', rel='noopener noreferrer') Iñigo Gabilondo
+                            p Neurodegenerative Diseases at BioBizkaia · MD · Ikerbasque
+                        article.person-card
+                            p.person-type Local speaker
+                            h3
+                                a(href='https://scholar.google.com/citations?hl=it&user=fMNyMMsAAAAJ', target='_blank', rel='noopener noreferrer') Rocío del Pino Sáez
+                            p Neurodegenerative Diseases at BioBizkaia · Ikerbasque
                         article.person-card
                             p.person-type Local speaker
                             h3
@@ -118,13 +127,87 @@ html(lang='en')
                         article.person-card
                             p.person-type Local speaker
                             h3
+                                a(href='https://scholar.google.com/citations?hl=it&user=XZ67g9kAAAAJ', target='_blank', rel='noopener noreferrer') Maitane Barrenechea
+                            p Associate Professor · Mondragon Unibertsitatea
+                        article.person-card
+                            p.person-type Local speaker
+                            h3
+                                a(href='https://scholar.google.com/citations?user=GHwmagQAAAAJ&hl=es', target='_blank', rel='noopener noreferrer') Unai Ayala Fernandez
+                            p Associate Professor · Mondragon Unibertsitatea
+                        article.person-card
+                            p.person-type Local speaker
+                            h3
                                 a(href='https://scholar.google.com/citations?user=13EhJDYAAAAJ&hl=en', target='_blank', rel='noopener noreferrer') Ibai Diez
                             p Computational Neuroimaging Lab at Biobizkaia · Ikerbasque
+                        article.person-card
+                            p.person-type Invited speaker
+                            h3
+                                a(href='https://scholar.google.com/citations?user=91lnNscAAAAJ&hl=it', target='_blank', rel='noopener noreferrer') Yuri Antonacci
+                            p Associate Professor · University of Palermo, Italy
                         article.person-card
                             p.person-type Local speaker
                             h3
                                 a(href='https://scholar.google.com/citations?user=HKgyv8oAAAAJ&hl=en', target='_blank', rel='noopener noreferrer') Asier Erramuzpe
                             p Computational Neuroimaging Lab at Biobizkaia · Ikerbasque
+                        article.person-card
+                            p.person-type Local speaker
+                            h3
+                                a(href='https://scholar.google.com/citations?hl=it&user=Oy2Df5QAAAAJ', target='_blank', rel='noopener noreferrer') Timo Kvamme
+                            p Computational Neuroimaging Lab at Biobizkaia · La Caixa Junior Leader
+
+                    .speaker-level
+                        .level-heading
+                            p.eyebrow Postdoctoral researchers
+                            h3 Postdocs
+                        .speaker-grid
+                            article.person-card
+                                p.person-type Postdoctoral researcher
+                                h3
+                                    a(href='https://scholar.google.com/citations?hl=it&user=kTsYoXAAAAAJ', target='_blank', rel='noopener noreferrer') Izaro Fernandez-Iriondo
+                                p Computational Neuroimaging Lab at Biobizkaia
+                            article.person-card
+                                p.person-type Postdoctoral researcher
+                                h3
+                                    a(href='https://scholar.google.com/citations?hl=it&user=tEPGynMAAAAJ', target='_blank', rel='noopener noreferrer') Helder Pinto
+                                p Ghent University
+                            article.person-card
+                                p.person-type Postdoctoral researcher
+                                h3
+                                    a(href='https://scholar.google.com/citations?user=JSwLqz8AAAAJ&hl=it', target='_blank', rel='noopener noreferrer') Antonio Jimenez-Marin
+                                p Computational Neuroimaging Lab at Biobizkaia
+                            article.person-card
+                                p.person-type Postdoctoral researcher
+                                h3
+                                    a(href='https://scholar.google.com/citations?hl=it&user=FJIq6NEAAAAJ', target='_blank', rel='noopener noreferrer') Giulio Tani Raffaelli
+                                p Ghent University
+                            article.person-card
+                                p.person-type Postdoctoral researcher
+                                h3
+                                    a(href='https://scholar.google.com/citations?user=zVjCyDgAAAAJ&hl=it', target='_blank', rel='noopener noreferrer') Borja
+                                p Computational Neuroimaging Lab at Biobizkaia
+
+                    .speaker-level
+                        .level-heading
+                            p.eyebrow Emerging researchers
+                            h3 Students
+                        .speaker-grid
+                            article.person-card
+                                p.person-type Student
+                                h3 Unai Sainz-Lugarezaresti
+                                p Computational Neuroimaging Lab at Biobizkaia
+                            article.person-card
+                                p.person-type Student
+                                h3
+                                    a(href='https://scholar.google.com/citations?user=YIw_M0gAAAAJ&hl=it&oi=ao', target='_blank', rel='noopener noreferrer') Niels Van Santen
+                                p Ghent University
+                            article.person-card
+                                p.person-type Student
+                                h3 Malen Razkin
+                                p Computational Neuroimaging Lab at Biobizkaia
+                            article.person-card
+                                p.person-type Student
+                                h3 Gao Hao
+                                p Ghent University
 
             section#organisers.section
                 .container
@@ -133,17 +216,20 @@ html(lang='en')
                         h2 Three universities, one shared meeting.
                     .organiser-grid
                         article.organiser-card
-                            .initials EHU
+                            .university-logo
+                                img(src='assets/ehu.jpg', alt='University of the Basque Country logo', loading='lazy')
                             h3 University of the Basque Country
                             p
                                 a(href='https://scholar.google.com/citations?user=BIfo1BAAAAAJ&hl=en', target='_blank', rel='noopener noreferrer') Jesús M. Cortes
                         article.organiser-card
-                            .initials UG
+                            .university-logo
+                                img(src='assets/ugent.svg', alt='Ghent University logo', loading='lazy')
                             h3 Ghent University
                             p
                                 a(href='https://scholar.google.com/citations?user=OJbWSLoAAAAJ&hl=en', target='_blank', rel='noopener noreferrer') Daniele Marinazzo
                         article.organiser-card
-                            .initials CU
+                            .university-logo
+                                img(src='assets/comenius.png', alt='Comenius University in Bratislava logo', loading='lazy')
                             h3 Comenius University Bratislava
                             p
                                 a(href='https://scholar.google.com/citations?hl=en&user=UZUQ-2QAAAAJ', target='_blank', rel='noopener noreferrer') Michal Javorka
@@ -152,12 +238,16 @@ html(lang='en')
                 .container
                     .registration-panel
                         .registration-copy
-                            p.eyebrow Registration
-                            h2 Free for students.
-                            p Attendance costs €0. Registration is required because places are limited.
+                            p.eyebrow Student applications
+                            h2 Apply for a place. Fee: €0.
+                            p Places are limited. If applications exceed capacity, the organising committee will select participants using the information submitted.
+                            ul.application-requirements
+                                li Contact and university details
+                                li A short motivation letter
+                                li Your CV (PDF)
                         .registration-action
-                            span.status-label Tickets via Ticket Tailor
-                            a.btn.btn-light.btn-lg(href='https://www.tickettailor.com/events/biocrucesbizkaiahri/2446960', target='_blank', rel='noopener noreferrer') View tickets
+                            span.status-label Google Form application
+                            a.btn.btn-light.btn-lg(href='https://forms.gle/s3jyVLcZRQVbqkBQ9', target='_blank', rel='noopener noreferrer') Apply now
 
         footer
             .container.footer-inner

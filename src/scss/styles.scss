@@ -277,6 +277,22 @@ body {
     gap: 1rem;
 }
 
+.speaker-level + .speaker-level,
+.speaker-grid + .speaker-level { margin-top: 4rem; }
+
+.level-heading {
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+    gap: 1rem;
+    margin-bottom: 1.25rem;
+    padding-bottom: .85rem;
+    border-bottom: 1px solid $line;
+
+    .eyebrow { margin: 0; }
+    h3 { margin: 0; font-family: "Manrope", sans-serif; font-size: 1.35rem; font-weight: 800; }
+}
+
 .person-card,
 .organiser-card {
     padding: 1.6rem;
@@ -318,17 +334,19 @@ body {
     &:hover { text-decoration-color: $blue; }
 }
 
-.initials {
-    display: grid;
-    width: 3.2rem;
-    height: 3.2rem;
+.university-logo {
+    display: flex;
+    height: 5.5rem;
     margin-bottom: 2rem;
-    place-items: center;
-    color: #fff;
-    background: $ink;
-    border-radius: .75rem;
-    font-family: "Manrope", sans-serif;
-    font-weight: 800;
+    align-items: center;
+
+    img {
+        display: block;
+        max-width: 100%;
+        max-height: 5.5rem;
+        object-fit: contain;
+        object-position: left center;
+    }
 }
 
 .registration-panel {
@@ -344,7 +362,7 @@ body {
 
     .eyebrow { color: #aeeff3; }
     h2 { font-size: clamp(2.4rem, 5vw, 4rem); }
-    p:last-child { max-width: 35rem; margin: 0; color: rgba(255, 255, 255, .78); font-size: 1.08rem; }
+    .registration-copy > p:not(.eyebrow) { max-width: 35rem; margin: 0; color: rgba(255, 255, 255, .78); font-size: 1.08rem; }
 }
 
 .registration-action {
@@ -357,6 +375,25 @@ body {
     margin-bottom: .75rem;
     color: rgba(255, 255, 255, .7);
     font-size: .76rem;
+}
+
+.application-requirements {
+    display: flex;
+    gap: .55rem;
+    margin: 1.5rem 0 0;
+    padding: 0;
+    flex-wrap: wrap;
+    list-style: none;
+
+    li {
+        padding: .5rem .75rem;
+        color: #fff;
+        background: rgba(255, 255, 255, .12);
+        border: 1px solid rgba(255, 255, 255, .2);
+        border-radius: .55rem;
+        font-size: .82rem;
+        font-weight: 700;
+    }
 }
 
 footer {
@@ -391,6 +428,7 @@ footer {
 
 @media (max-width: 575.98px) {
     .speaker-grid { grid-template-columns: 1fr; }
+    .level-heading { align-items: flex-start; flex-direction: column; }
     .footer-inner { flex-direction: column; }
 }
 
