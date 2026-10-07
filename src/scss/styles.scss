@@ -349,6 +349,11 @@ body {
     }
 }
 
+.comenius-logo img {
+    transform: scale(1.75);
+    transform-origin: left center;
+}
+
 .registration-panel {
     display: flex;
     align-items: center;
