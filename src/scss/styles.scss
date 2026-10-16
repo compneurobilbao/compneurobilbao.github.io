@@ -354,6 +354,22 @@ body {
     transform-origin: left center;
 }
 
+.sponsor-section { padding: 0 0 clamp(4rem, 7vw, 7rem); }
+
+.sponsor-panel {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1.5rem;
+    padding: 1.75rem 2rem;
+    background: #fff;
+    border: 1px solid $line;
+    border-radius: 1rem;
+
+    p { margin: 0; color: rgba($ink, .7); font-weight: 700; }
+    img { display: block; width: auto; max-width: 12rem; max-height: 4rem; }
+}
+
 .registration-panel {
     display: flex;
     align-items: center;
@@ -434,6 +450,7 @@ footer {
 @media (max-width: 575.98px) {
     .speaker-grid { grid-template-columns: 1fr; }
     .level-heading { align-items: flex-start; flex-direction: column; }
+    .sponsor-panel { flex-direction: column; text-align: center; }
     .footer-inner { flex-direction: column; }
 }
 
